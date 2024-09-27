@@ -58,6 +58,17 @@ The Arduino Uno needs a few extra dependencies to work, for example, if you get 
 
 To fix this, see the installation guide for [Linux](../../../../getting-started/install/linux/#avr-eg-arduino-uno-2) and for [macOS](../../../../getting-started/install/macos/#avr-eg-arduino-uno-2).
 
+### Arduino Uno R4 Support
+Currently Arduino Uno R4's are not yet supported. See [this PR](https://github.com/tinygo-org/tinygo/pull/4265) for more details.
+If you're receiving error messages like this 
+```
+Error: programmer is not responding
+Warning: attempt 1 of 10: not in sync: resp=0x00
+```
+when attempting to run 
+```tinygo flash -target=arduino -port=COM5```
+this is likely the cause.
+
 ## Flashing
 
 ### AVRDude
